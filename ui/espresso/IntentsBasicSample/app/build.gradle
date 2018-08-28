@@ -17,6 +17,12 @@ android {
     }
     productFlavors {
     }
+
+    testOptions {
+        execution 'ANDROID_TEST_ORCHESTRATOR'
+        unitTests.returnDefaultValues = true
+        animationsDisabled = true
+    }
 }
 
 dependencies {
